@@ -1,0 +1,1 @@
+json.array! @picas, partial: 'picas/pica', as: :pica

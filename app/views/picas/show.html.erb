@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @pica.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @pica.description %>
+</p>
+
+<p>
+  <strong>Picture:</strong>
+  <%= @pica.picture %>
+</p>
+
+<%= link_to 'Edit', edit_pica_path(@pica) %> |
+<%= link_to 'Back', picas_path %>

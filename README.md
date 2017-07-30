@@ -14,9 +14,10 @@ User can Sign and Sign-up
 
 ## Error
  There is an error on uploading images.
-
+ ![Error](/md/instagramerror.png)
+ 
 ## Check
-Visit the new [Instagram clone](https://github.com/grailwilly/filter) I built in github. 
+Visit the new [Instagram clone](https://github.com/grailwilly/filter) I built. 
 
 ## Contribute
 Fork and Pull request.

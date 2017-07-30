@@ -45,28 +45,34 @@
           </div>
 
           <div class="actions">
-            <%= f.submit "Sign up" %>
+             <%= f.submit "Sign up" %> 
+            <p>By signing up, you agree to our</p>
+            <p>Terms & Privacy Policy</p>
           </div>
           <% end %>
 
-          <%= render "devise/shared/links" %>
         </div>
       </div>
     </div>
     <div class="col-xs-4 col-xs-offset-6">
       <div class="panel panel-default">
         <div class="panel-body">
-          Have an account? <a href="/users/sign_in">Log in</a>
+          Have an account?&nbsp;<a data-toggle="modal" data-target="#myModal">Log in</a>
         </div>
-      </div>
-    </div>
-  </div>
-</div> <!--container -->
+        
 
-<!--
-<h2>Log in</h2>
+<!-- Modal -->
+        <div id="myModal" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-sm">
 
-<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+    <!-- Modal content-->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      <h4 class="modal-title">Log in</h4>
+                  </div>
+                  <div class="modal-body">
+                    <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
   <div class="field">
     <%= f.label :email %><br />
     <%= f.email_field :email, autofocus: true %>
@@ -89,5 +95,17 @@
   </div>
 <% end %>
 
-<%= render "devise/shared/links" %>
--->
+
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+            </div>
+        </div> <!-- end modal -->
+        
+      </div>
+    </div>
+  </div>
+</div> <!--container -->
+
